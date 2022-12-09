@@ -1,0 +1,158 @@
+[
+    {
+        "Set Name":"Set Name",
+        "Set Bonus 1":"Set Bonus 1",
+        "Set Bonus 2":"Set Bonus 2",
+        "Set Bonus 3":"Set Bonus 3"
+    },
+    {
+        "Set Name":"5.11 Tactical",
+        "Set Bonus 1":"10% Health",
+        "Set Bonus 2":"20% Extra Incoming Healing",
+        "Set Bonus 3":"10% Hazard Protection"
+    },
+    {
+        "Set Name":"Airaldi Holdings",
+        "Set Bonus 1":"10% Marksman Rifle Damage",
+        "Set Bonus 2":"15% Headshot Damage",
+        "Set Bonus 3":"5% Damage to Armor"
+    },
+    {
+        "Set Name":"Alps Summit Armaments",
+        "Set Bonus 1":"20% Skill Repair",
+        "Set Bonus 2":"20% Skill Duration",
+        "Set Bonus 3":"10% Cooldown Reduction"
+    },
+    {
+        "Set Name":"Badger Tuff",
+        "Set Bonus 1":"10% Shotgun Damage",
+        "Set Bonus 2":"5% Total Armor",
+        "Set Bonus 3":"10% Armor on Kill"
+    },
+    {
+        "Set Name":"Belstone Armory",
+        "Set Bonus 1":"1% Armor Regen",
+        "Set Bonus 2":"10% Armor on Kill",
+        "Set Bonus 3":"20% incoming repairs"
+    },
+    {
+        "Set Name":"Brazos de Arcabuz",
+        "Set Bonus 1":"10% Skill Haste",
+        "Set Bonus 2":"1 Skill Tier",
+        "Set Bonus 3":"20% Magazine Size"
+    },
+    {
+        "Set Name":"Ceska Vyroba s.r.o.",
+        "Set Bonus 1":"10% Critical Hit Chance",
+        "Set Bonus 2":"10% Hazard Protection",
+        "Set Bonus 3":"10% Health"
+    },
+    {
+        "Set Name":"China Light Industries Corporation",
+        "Set Bonus 1":"15% Explosive Damage",
+        "Set Bonus 2":"10% Cooldown Reduction",
+        "Set Bonus 3":"10% Status Effects"
+    },
+    {
+        "Set Name":"Douglas & Harding",
+        "Set Bonus 1":"20% Pistol Damage",
+        "Set Bonus 2":"20% Stability",
+        "Set Bonus 3":"20% Accuracy"
+    },
+    {
+        "Set Name":"Empress International",
+        "Set Bonus 1":"10% Skill Health",
+        "Set Bonus 2":"10% Skill Damage",
+        "Set Bonus 3":"10% Skill Efficiency"
+    },
+    {
+        "Set Name":"Fenris Group AB",
+        "Set Bonus 1":"10% Assault Rifle Damage",
+        "Set Bonus 2":"20% Reload Speed",
+        "Set Bonus 3":"20% Stability"
+    },
+    {
+        "Set Name":"Gila Guard",
+        "Set Bonus 1":"5% Total Armor",
+        "Set Bonus 2":"10% Health",
+        "Set Bonus 3":"1% Armor / sec Regeneration"
+    },
+    {
+        "Set Name":"Golan Gear Ltd",
+        "Set Bonus 1":"10% Status Effects",
+        "Set Bonus 2":"1% Armor / sec Regeneration",
+        "Set Bonus 3":"5% Total Armor"
+    },
+    {
+        "Set Name":"Grupo Sombra S.A.",
+        "Set Bonus 1":"15% Critical Hit Damage",
+        "Set Bonus 2":"15% Explosive Damage",
+        "Set Bonus 3":"15% Headshot Damage"
+    },
+    {
+        "Set Name":"Hana-U Corporation",
+        "Set Bonus 1":"10% Cooldown Reduction",
+        "Set Bonus 2":"10% Skill Damage",
+        "Set Bonus 3":"5% Weapon Damage"
+    },
+    {
+        "Set Name":"Murakami Industries",
+        "Set Bonus 1":"20% Skill Duration",
+        "Set Bonus 2":"20% Skill Repair",
+        "Set Bonus 3":"10% Skill Damage"
+    },
+    {
+        "Set Name":"Overlord Armaments",
+        "Set Bonus 1":"10% Rifle Damage",
+        "Set Bonus 2":"20% Accuracy",
+        "Set Bonus 3":"10% Weapon Handling"
+    },
+    {
+        "Set Name":"Petrov Defense Group",
+        "Set Bonus 1":"10% LMG Damage",
+        "Set Bonus 2":"10% Weapon Handling",
+        "Set Bonus 3":"20% Ammo Capacity"
+    },
+    {
+        "Set Name":"Providence Defense",
+        "Set Bonus 1":"15% Headshot Damage",
+        "Set Bonus 2":"10% Critical Hit Chance",
+        "Set Bonus 3":"15% Critical Hit Damage"
+    },
+    {
+        "Set Name":"Richter & Kaiser GmbH",
+        "Set Bonus 1":"20% Extra Incoming Healing",
+        "Set Bonus 2":"10% Explosive Resistance",
+        "Set Bonus 3":"20% Skill Repair"
+    },
+    {
+        "Set Name":"Sokolov Concern",
+        "Set Bonus 1":"10% SMG Damage",
+        "Set Bonus 2":"15% Critical Hit Damage",
+        "Set Bonus 3":"10% Critical Hit Chance"
+    },
+    {
+        "Set Name":"Uzina Getica",
+        "Set Bonus 1":"5% Armor",
+        "Set Bonus 2":"10% Armor on kill",
+        "Set Bonus 3":"10% Hazard protection"
+    },
+    {
+        "Set Name":"Walker, Harris & Co.",
+        "Set Bonus 1":"5% Weapon Damage",
+        "Set Bonus 2":"5% Damage to Armor",
+        "Set Bonus 3":"5% Damage to Health"
+    },
+    {
+        "Set Name":"Wyvern Wear",
+        "Set Bonus 1":"10% Skill Damage",
+        "Set Bonus 2":"10% Status Effects",
+        "Set Bonus 3":"20% Skill Duration"
+    },
+    {
+        "Set Name":"Yaahl Gear",
+        "Set Bonus 1":"10% Hazard Protection",
+        "Set Bonus 2":"5% Weapon Damage",
+        "Set Bonus 3":"40% Pulse Resistance"
+    }
+]

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=opea">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Division 2 Companion</title>
-    <link rel="shortcut icon" type="image/png" href="Images/SHD.png"/>
+    <link rel="shortcut icon" type="image/png" href="Images/SHD.png"/><!-- favicon -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,7 +20,7 @@
     </div>
     <div class="card">
         <div class="card-content">
-        <div class="card-image">
+        <div class="card-image" >
           <img src="Images/backpack.png" class="img-slot-bg">
         </div>
         <div class="card-info-wrapper">
@@ -66,16 +66,5 @@
     </div>
     </div>
 </body>
-<script>
-    document.getElementById("cards").onmousemove = e => {
-  for(const card of document.getElementsByClassName("card")) {
-    const rect = card.getBoundingClientRect(),
-          x = e.clientX - rect.left,
-          y = e.clientY - rect.top;
-
-    card.style.setProperty("--mouse-x", `${x}px`);
-    card.style.setProperty("--mouse-y", `${y}px`);
-  };
-}
-</script>
+<script src="script.js"></script> <!--javscript file for x, y mouse cordinates-->
 </html>

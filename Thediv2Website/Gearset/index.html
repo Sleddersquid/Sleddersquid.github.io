@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="Images/SHD.png"/>
+    <link rel="shortcut icon" type="image/png" href="SHD.png"/>
     <title>Gear Sets</title>
     <style>
         body {
@@ -40,28 +40,25 @@
 <body>
     <div>
         <h1>Brand Sets</h1>
-        <table id="table" cellspacing="0" cellpadding="0">
-        </table>
+        <table id="table" cellspacing="0" cellpadding="0"></table>
     </div>
 </body>
 <script>
+    function jsonToTable(json) {
+        var table = '<table>';
+        json.map(function(row) {
+            table += '<tr>';
+            Object.keys(row).map(function(key) {
+            table += '<td>' + row[key] + '</td>';
+            });
+            table += '</tr>';
+            });
+        table += '</table>';
+        return table;
+    }
 
-
-function jsonToTable(json) {
-    var table = '<table>';
-    json.map(function(row) {
-        table += '<tr>';
-        Object.keys(row).map(function(key) {
-        table += '<td>' + row[key] + '</td>';
-        });
-        table += '</tr>';
-        });
-    table += '</table>';
-    return table;
-}
-
-fetch('Brandset.json')
-    .then((response) => response.json())
-    .then((json) => document.getElementById('table').innerHTML = jsonToTable(json));
+    fetch('Brandset.json')
+        .then((response) => response.json())
+        .then((json) => document.getElementById('table').innerHTML = jsonToTable(json));
 </script>
 </html>

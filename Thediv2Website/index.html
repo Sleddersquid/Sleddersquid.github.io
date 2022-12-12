@@ -1,70 +1,145 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=opea">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Division 2 Companion</title>
-    <link rel="shortcut icon" type="image/png" href="Images/SHD.png"/><!-- favicon -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="Images/SHD.png">
+    <title>Test av Section</title>
+    <style>
+    :root {
+        --bg-color: rgb(20, 20, 20);
+        --card-bg-color: rgba(255, 255, 255, 0.01);
+        --card-border: rgba(255, 255, 255, 0.15);
+    }
+    .reveal {
+        position: relative;
+        transform: translateY(144px);
+        opacity: 0;
+        transition: 1s all ease;
+    }
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    section {
+        height: 100%;
+        width: 100%;
+        background-color:  var(--bg-color)
+    }
+    body {
+        padding: 0px;
+        margin: 0px;
+        background-color: var(--bg-color);
+        height: 100vh;
+    }
+    h1, h2, h3, h4, p, span {
+      color: rgb(210, 210, 210);
+      font-family: "Rubik", sans-serif;
+      font-weight: 400;
+      margin: 0px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .one, .two {
+        width: 100%;
+        height: 50vh;
+        margin: 0;
+        padding: 0;
+    }
+    .two {
+        top: 50vh;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2%;
+    }
+    .two > .card {
+        border: 2px solid var(--card-border);
+        border-radius: 4%;
+        position: relative;
+        height: 60%;
+        width: 20%;
+        transition: all .3s ease-in-out;
+    }
+    .card:hover {
+        transform: scale(104%);
+    }
+
+    .card-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 81%;
+    }
+    .card > h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    </style>
 </head>
 <body>
-<div id="cards">
-    <div class="card">
-        <div class="card-content">
-        <div class="card-image">
-        </div>
-        <div class="card-info-wrapper">
-        </div>
-        </div>
+<section class="container">
+    <div class="one">
+        <h1>Welcome to The Division 2 Website</h1>
     </div>
-    <div class="card">
-        <div class="card-content">
-        <div class="card-image" >
-          <img src="Images/backpack.png" class="img-slot-bg">
+    <div class="two">
+            <div class="card" onclick="location.href='Brandset/index.html';" style="cursor:pointer;">
+                <div class="card-image" href="Brandset/index.html">          
+                    <img draggable="false" src="Images/backpack.png">
+                </div>
+                <h3>Brand set bonuses</h3>
+            </div>
+        <div class="card" onclick="location.href='http://www.example.com';" style="cursor:pointer;">
+            <div class="card-image">          
+                <img style="scale: 160%;" draggable="false" src="Images/SHD.png">
+            </div>
+            <h3>Exotics</h3>
         </div>
-        <div class="card-info-wrapper">
-        </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-        <div class="card-image">
+        <div class="card" onclick="location.href='http://www.example.com';" style="cursor:pointer;">
+            <div class="card-image">
 
-        </div>
-        <div class="card-info-wrapper">
-        </div>
+            </div>
+            <h3>Gear Sets</h3>
         </div>
     </div>
-    <div class="card">
-        <div class="card-content">
-        <div class="card-image">
-            <i class="fa-duotone fa-person-to-portal"></i>
-        </div>
-        <div class="card-info-wrapper">
+</section>    
+<section class="container reveal">
+    <div>
+        <h2>Dette er tittelen nr 2</h2>
+        <p>Dette er teksten nr 2</p>
+    </div>
+</section>
+<section class="container reveal">
+    <div>
+        <h2>Dette er tittelen nr 3</h2>
+        <p>Dette er teksten nr 3</p>
+    </div>
+</section>
 
-        </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-        <div class="card-image">
-            <i class="fa-duotone fa-person-from-portal"></i>
-        </div>
-        <div class="card-info-wrapper">
-        </div>
-        </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-        <div class="card-image">
-            <i class="fa-duotone fa-otter"></i>
-        </div>
-        <div class="card-info-wrapper">
-        </div>
-        </div>
-    </div>
-    </div>
 </body>
-<script src="script.js"></script> <!--javscript file for x, y mouse cordinates-->
+<script>
+    function reveal() {
+        var revaels = document.querySelectorAll(".reveal");
+
+        revaels.forEach((reveal) => {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveal.getBoundingClientRect().top;
+            var elementVisible = 100;
+
+            if (elementTop < windowHeight - elementVisible) {
+                reveal.classList.add("active");
+            }
+            else {
+                reveal.classList.remove("active");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", reveal);
+</script>
 </html>

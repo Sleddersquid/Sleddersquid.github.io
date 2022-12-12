@@ -50,10 +50,17 @@
         <h3>Terminal Kommandoer</h3>
         <ul id="Terminal Kommandoer">
             <li>echo<b>:</b> </li>
-            <li><img src="echo0.png"></li>
-            <li>cat<b>:</b> Concatonate(skjøte sammen)</li>
-            <li>cd<b>:</b> Change Directory: Ender på </li>
-            <li>ls<b>:</b> Lister opp alle filer og folders i nåværende directory</li>
+            <li>cat<b>:</b> Concatonate. Cat kan brukes på 2 måter</li>
+            <ol>
+                <li>cat fil1.txt<b>:</b> Leser av innholdet i en fil, unasett filformat</li>
+                <li>cat fil1.txt > fil2.txt<b>:</b> Skjøter sammen fil1 inn i fil2</li>
+            </ol>
+            <li>mkdir<b>:</b> Lager directories. Man kan lage flere directories sammtidig med mkdir Katalog1/Katalog2/Katalog3</li>
+            <li><img src="mkdir.png"></li>
+            <li>rmdir<b>:</b> Sletter directories</li>
+            <li>cd<b>:</b> Change Directory: Ender på directorien man er i</li>
+            <li><img src="cd.png"></li>
+            <li>ls<b>:</b> List directory contents. Lister opp alle filer og folders i nåværende directory</li>
             <ul id="sub-list">
                 <li>ls -l<b>:</b> Dikter opp alle filer, men ekstra info </li>
                 <li>ls -a<b>:</b> Viser alle filer, i tillegg til skulte filer</li> <!--Lage skjulte filer med. Kanksje legg til denne info på touch-->
@@ -69,7 +76,11 @@
         </ul>
         <h3>Jobbing med filer</h3>
         <ul id="Filer">
-            <li>mv<b>:</b> Flytting eller entring av navn til filer.</li>
+            <li>mv<b>:</b> Brukes til flytting eller entring av navn til filer.</li>
+            <ul id="sub-list">
+                <li>mv fil1.txt fil2.txt<b>:</b> Denne kommandoen bytter navnet til filen fil1.txt til fil2.txt</li>
+                <li></li>
+            </ul>
             <li>touch<b>:</b> Berører filer. Hvis den ikke finnes fra før av blir en ny fil opprettet, hvis den finnes fra før oppdateres tidsstempet.</li>
             <li>Symbolene <, >, >> og | <b>:</b> Kan brukes med echo, ls, pwd</li>
             <ul id="sub-list">
@@ -83,8 +94,13 @@
         <ul id="Variabler">
             <li>var="Hello World" </li>
             <ul id="sub-list">
+                <li>echo $var <b>:</b> Skriver ut Hello World</li>
+                <li><img src="echo0.png"></li>
                 <li>echo "$var" <b>:</b> Skriver ut Hello World</li>
+                <li><img src="echo1.png"></li>
                 <li>echo '$var' <b>:</b> Skriver ut $var</li>
+                <li><img src="echo2.png"></li>
+                <li>Hvis $var er tom eller ikke har noe verdi får man en    </li>
             </ul>
         </ul>
         <h3>Type Editorer</h3>
@@ -97,6 +113,8 @@
         <ul id="shortcuts">
             <li>Ctrl + l<b>:</b> Samme funksjon som kommandoen "clear"</li>
             <li>Ctrl + d<b>:</b> Samme funksjon som kommandoen "exit"</li>
+            <li>Ctrl + a<b>:</b> Skyver musespekkeren helt til venstre</li>
+            <li>Ctrl + e<b>:</b> Skyver musespekkeren helt til høyres</li>
         </ul>
         <h1>Shellscripting</h1>
         <h1>Bashcriptin</h1>

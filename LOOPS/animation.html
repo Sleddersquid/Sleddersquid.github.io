@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: black;
+        }
+
+        h1, h2 {
+            font-family: "Mono Space", monospace;
+            color: white;
+            font-size: 15rem;
+            user-select: none;
+        }
+
+
+        h1, img {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            translate: -50% -50%;
+        }
+
+        h1 {
+            animation-name: rotate;
+            animation: rotate 2s 1 forwards;
+            /* animation-fill-mode: forwards; */
+            z-index: 99;
+        }
+
+        img {
+            animation: fadeIn 0.3s 0.85s forwards;
+            opacity: 0;
+            width: 100svw;
+            height: 100svh;
+        }
+
+        /* h1::before {
+            color: black;
+            transform: scale(200%);
+        }
+
+        h1::after {
+            color: black;
+            transform: scale(2000%);
+        } */
+
+        @keyframes rotate {
+            0% {
+                color: black;
+                transform: scale(200%);
+
+            }
+            33% {
+                color: white;
+                transform: scale(100%);
+            }
+
+            75% {
+                color: black;
+            }
+            99.9% {
+                color: black;
+                transform: scale(10000%);
+                display: none;
+                opacity: 0;
+
+            }
+
+            100% {
+                color: black;
+                z-index: -1;
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class=".removee">LÖÖPS</h1>
+        <!-- <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, recusandae velit placeat libero quod reiciendis voluptatem animi similique impedit. Suscipit, quis. Corrupti officia est eveniet, id vel nemo perferendis eligendi</h2> -->
+        <img src="27f.jpg" alt="">
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+    $('.removee').bind('animationend webkitAnimationEnd oAnimationEnd MSAnimationEnd', function(e) { $(this).remove(); });
+</script>
+</html>

@@ -1,9 +1,9 @@
 [
     {
-        "Set Name":"Set Name",
-        "Set Bonus 1":"Set Bonus 1",
-        "Set Bonus 2":"Set Bonus 2",
-        "Set Bonus 3":"Set Bonus 3"
+        "Set Name":"<b>Set Name</b>",
+        "Set Bonus 1":"<b>Set Bonus 1</b>",
+        "Set Bonus 2":"<b>Set Bonus 2</b>",
+        "Set Bonus 3":"<b>Set Bonus 3</b>"
     },
     {
         "Set Name":"5.11 Tactical",
